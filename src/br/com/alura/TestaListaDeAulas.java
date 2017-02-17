@@ -1,7 +1,10 @@
 package br.com.alura;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
-import jdk.nashorn.internal.runtime.linker.JavaAdapterFactory;
+
+
 public class TestaListaDeAulas {
 
 	/**
