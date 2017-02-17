@@ -12,8 +12,7 @@ public class TestandoListas {
 		listasAulas.add(aula1);
 		listasAulas.add(aula2);
 		listasAulas.add(aula3);
-		//System.out.println(listasAulas);
-		
+				
 		for (String aula : listasAulas) {
 			System.out.println("Aula :: " +  aula);
 			
