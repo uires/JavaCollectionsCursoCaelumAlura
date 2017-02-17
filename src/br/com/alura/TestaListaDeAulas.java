@@ -1,5 +1,7 @@
 package br.com.alura;
 import java.util.*;
+import java.util.Comparator;
+import jdk.nashorn.internal.runtime.linker.JavaAdapterFactory;
 public class TestaListaDeAulas {
 
 	/**
@@ -7,16 +9,19 @@ public class TestaListaDeAulas {
 	 */
 	public static void main(String[] args) {
 		
-		Aula a1 = new Aula("Revisando o assunto de ArrayList ", 24, "Paulo Silveira", 5);
-		Aula a2 = new Aula("Lista de Objetos ", 15, "Silveira ", 5);
-		Aula a3 = new Aula("Relacionamento de listas e objetos ", 15,"P. Silveira", 5);
+		Aula a1 = new Aula("Revisando o assunto de ArrayList ", 24, "Alejan Silveira", 5);
+		Aula a2 = new Aula("Lista de Objetos ", 12, "Bed Silveira ", 5);
+		Aula a3 = new Aula("Relacionamento de listas e objetos ", 13,"P. Silveira", 5);
 		ArrayList<Aula> aulas = new ArrayList<>();
 		
 		aulas.add(a1);
 		aulas.add(a2);
 		aulas.add(a3);
+		Collections.sort(aulas);
 		
-		System.out.println(aulas);
+		//Collections.sort(aulas, Comparator.comparing(Aula::getTempo));
+		
+			System.out.println(aulas);
 	}
 
 }

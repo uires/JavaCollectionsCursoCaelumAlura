@@ -1,6 +1,6 @@
 package br.com.alura;
 
-public class Aula {
+public class Aula implements Comparable<Aula>{
 	private String titulo;
 	private int tempo;
 	private String instrutorDaCaelum;
@@ -23,7 +23,7 @@ public class Aula {
 	}
 
 	public int getTempo() {
-		return tempo;
+		return this.tempo;
 	}
 
 	public void setTempo(int tempo) {
@@ -31,8 +31,20 @@ public class Aula {
 	}
 	
 	public String toString(){
-		return "\nAula: " + this.titulo + "\nMinutos: " + this.tempo + "\nInstrutor: " +
-				this.instrutorDaCaelum + "\nNível de dificuldade: " + this.dificuldadeDoCurso;
+		return "[\nAula: " + this.titulo + "\nMinutos: " + this.tempo + "\nInstrutor: " +
+				this.instrutorDaCaelum + "\nNível de dificuldade: " + this.dificuldadeDoCurso + "]";
+	}
+
+	@Override
+	public int compareTo(Aula outraAula) {
+		if(this.titulo.compareTo(outraAula.titulo)< 0 && 
+				(this.instrutorDaCaelum.compareTo(outraAula.instrutorDaCaelum) < 0)){
+			return -1;
+		}else if(this.titulo.compareTo(outraAula.titulo) > 0 && 
+				(this.instrutorDaCaelum.compareTo(outraAula.instrutorDaCaelum) > 0)){
+			return 1;
+		}// Retorna zero caso de impate :
+		return 0;
 	}
 	
 	
