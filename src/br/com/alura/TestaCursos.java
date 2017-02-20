@@ -12,8 +12,6 @@ public class TestaCursos {
 		javaColecoes.adiciona(new Aula("Usando Polimorfismo: ",20, "Paulo Silveira", 5));
 		javaColecoes.adiciona(new Aula("Gii", 30 ,"Paulo Silveira",10));
 		
-		System.out.println(javaColecoes.getAulas());
-		
 	}
 
 }
