@@ -28,7 +28,7 @@ public class TestaCursos{
 		System.out.println(javaColecoes.getAulas());
 		
 		
-		
+		System.out.println("Tempo Total de todas as aulas é: " + javaColecoes.getTempoTotal());
 		
 		
 		
