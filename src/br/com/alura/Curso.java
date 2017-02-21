@@ -24,7 +24,8 @@ public class Curso implements Comparable<Curso> {
 	}
 		
 	public String toString(){
-		return "Nome curso: " + this.nome + "\nNome Instrutor: " + this.nomeInstrutor;
+		return "Curso: " + this.nome + "\nCom o instrutor: " + this.nomeInstrutor +
+				"\nTempo total de aula: " + this.getTempoTotal() + " minutos" ;
 		
 	}
 	public void adiciona(Aula aula){

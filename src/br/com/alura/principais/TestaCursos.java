@@ -25,10 +25,10 @@ public class TestaCursos{
 		
 		javaColecoes.adiciona(a1);
 		//System.out.println(aulas);
+		//System.out.println(javaColecoes.getAulas());
+		System.out.println(javaColecoes);
 		System.out.println(javaColecoes.getAulas());
 		
-		
-		System.out.println("Tempo Total de todas as aulas é: " + javaColecoes.getTempoTotal());
 		
 		
 		
