@@ -31,7 +31,6 @@ public class TestaCurso2 {
 		
 		javaColecoes.adiciona(a1);
 		System.out.println(javaColecoes + "\n" + aulas);
-		//System.out.println(javaColecoes + "\n" +  javaColecoes.getAulas());
 		System.out.println("---------------------------------------");
 		
 		
