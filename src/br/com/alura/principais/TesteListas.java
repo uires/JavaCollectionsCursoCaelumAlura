@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.principais;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

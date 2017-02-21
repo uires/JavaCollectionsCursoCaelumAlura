@@ -1,25 +1,28 @@
 package br.com.alura;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Aula implements Comparable<Aula>{
-	private String titulo;
+	private String nome;
 	private int tempo;
 	private String instrutorDaCaelum;
 	private int dificuldadeDoCurso;
 
 	public Aula(String titulo, int tempo, String instrutorDaCaelum, int dificuldadeDoCurso) {
 		
-		this.titulo = titulo;
+		this.nome = titulo;
 		this.tempo = tempo;
 		this.instrutorDaCaelum = instrutorDaCaelum;
 		this.dificuldadeDoCurso = dificuldadeDoCurso;
 	}
 
 	public String getTitulo() {
-		return titulo;
+		return nome;
 	}
 
 	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+		this.nome = titulo;
 	}
 
 	public int getTempo() {
@@ -31,21 +34,22 @@ public class Aula implements Comparable<Aula>{
 	}
 	
 	public String toString(){
-		return "[\nAula: " + this.titulo + "\nMinutos: " + this.tempo + "\nInstrutor: " +
+		return "[\n\n\nAula: " + this.nome + "\n" + this.tempo + " Minutos \n" + "Instrutor: " +
 				this.instrutorDaCaelum + "\nNível de dificuldade: " + this.dificuldadeDoCurso + "]";
 	}
 
 	@Override
 	public int compareTo(Aula outraAula) {
-		if(this.titulo.compareTo(outraAula.titulo)< 0 && 
+		if(this.nome.compareTo(outraAula.nome)< 0 && 
 				(this.instrutorDaCaelum.compareTo(outraAula.instrutorDaCaelum) < 0)){
 			return -1;
-		}else if(this.titulo.compareTo(outraAula.titulo) > 0 && 
+		}else if(this.nome.compareTo(outraAula.nome) > 0 && 
 				(this.instrutorDaCaelum.compareTo(outraAula.instrutorDaCaelum) > 0)){
 			return 1;
-		}// Retorna zero caso de impate :
+		}// Retorna zero caso de empate :
 		return 0;
 	}
 	
+
 	
 }
