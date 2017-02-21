@@ -14,7 +14,7 @@ public class TestaCursos{
 				"Paulo Silveira");
 		List<Aula> aulas = javaColecoes.getAulas();	
 		javaColecoes.adiciona(new Aula("ArrayList", 30, "Paulo Silveira ", 5));
-		javaColecoes.adiciona(new Aula("Usando Polimorfismo: ",20, "Paulo Silveira", 5));
+		javaColecoes.adiciona(new Aula("Usando Polimorfismo ",20, "Paulo Silveira", 5));
 		javaColecoes.adiciona(new Aula("Polimorfismo de Listas", 30 ,"Paulo Silveira",10));
 		//System.out.println(javaColecoes.getAulas());
 		

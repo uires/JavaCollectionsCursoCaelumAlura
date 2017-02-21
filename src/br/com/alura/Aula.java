@@ -40,14 +40,7 @@ public class Aula implements Comparable<Aula>{
 
 	@Override
 	public int compareTo(Aula outraAula) {
-		if(this.nome.compareTo(outraAula.nome)< 0 && 
-				(this.instrutorDaCaelum.compareTo(outraAula.instrutorDaCaelum) < 0)){
-			return -1;
-		}else if(this.nome.compareTo(outraAula.nome) > 0 && 
-				(this.instrutorDaCaelum.compareTo(outraAula.instrutorDaCaelum) > 0)){
-			return 1;
-		}// Retorna zero caso de empate :
-		return 0;
+		return this.nome.compareTo(outraAula.nome);		
 	}
 	
 
