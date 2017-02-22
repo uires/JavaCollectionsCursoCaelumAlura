@@ -6,6 +6,9 @@ public class Curso implements Comparable<Curso> {
 	private String nomeInstrutor;
 	private List<Aula> aulas = new LinkedList<Aula>();
 	private Integer tempoTotal = 0;
+	private Set<Alunos> alunos = new HashSet<>();
+	
+	
 	public Curso(String nome, String nomeInstrutor) {
 		this.nome = nome;
 		this.nomeInstrutor = nomeInstrutor;
@@ -42,6 +45,13 @@ public class Curso implements Comparable<Curso> {
 	@Override
 	public int compareTo(Curso outraAula) {
 		return this.nome.compareTo(outraAula.nome);
+	}
+
+	public void matriculaAluno(Alunos aluno) {
+		this.alunos.add(aluno);	
+	}
+	public Set<Alunos> getAlunos() {
+		return Collections.unmodifiableSet(alunos);
 	}
 	
 	

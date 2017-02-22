@@ -1,0 +1,37 @@
+package br.com.alura.principais;
+
+import java.util.List;
+
+import br.com.alura.Alunos;
+import br.com.alura.Aula;
+import br.com.alura.Curso;
+
+public class TestaCursoComAlunos {
+
+	public static void main(String[] args) {
+
+		Curso javaColecoes = new Curso("Dominando Collecitons",
+				"Paulo Silveira");
+		
+		List<Aula> aulasImutaveis = javaColecoes.getAulas();	
+		javaColecoes.adiciona(new Aula("ArrayList", 30, "Paulo Silveira ", 5));
+		javaColecoes.adiciona(new Aula("Usando Polimorfismo ",20, "Paulo Silveira", 5));
+		javaColecoes.adiciona(new Aula("Polimorfismo de Listas", 30 ,"Paulo Silveira",10));
+		javaColecoes.adiciona(new Aula("Java: Orientado a Objeto" , 32, "Guilherme Silveira", 8));
+		
+		Alunos a1 = new Alunos("João Lima", 22487);
+		Alunos a2 = new Alunos("Laisa Karoline", 11322);
+		Alunos a3 = new Alunos("Maurício Aniche", 22443);
+		
+		javaColecoes.matriculaAluno(a1);
+		javaColecoes.matriculaAluno(a2);
+		javaColecoes.matriculaAluno(a3);
+		
+		
+		System.out.println(javaColecoes);
+		System.out.println(javaColecoes.getAulas());
+		System.out.println(javaColecoes.getAlunos());
+		
+	}
+
+}
