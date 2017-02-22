@@ -53,6 +53,10 @@ public class Curso implements Comparable<Curso> {
 	public Set<Alunos> getAlunos() {
 		return Collections.unmodifiableSet(alunos);
 	}
+
+	public boolean estaMatriculado(Alunos aluno) {
+		return this.alunos.contains(aluno);
+	}
 	
 	
 		

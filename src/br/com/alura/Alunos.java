@@ -8,8 +8,14 @@ public class Alunos {
 	private Integer numeroMatricula;
 
 	public Alunos(String nomeAluno, Integer numeroMatricula) {
-
+		if (nomeAluno == null) {
+			throw new NullPointerException("Nome não pode ser null");
+		}
 		this.nomeAluno = nomeAluno;
+		if (numeroMatricula == 0) {
+			throw new NullPointerException("Valor de entrada incorreto");
+		}
+
 		this.numeroMatricula = numeroMatricula;
 	}
 
@@ -20,10 +26,12 @@ public class Alunos {
 	public Integer getNumeroMatricula() {
 		return numeroMatricula;
 	}
+
 	@Override
 	public String toString() {
-		return "\n-----------------------------------" + "\nNome aluno: " + this.nomeAluno +
-				"\nNúmero matrícula :" + this.numeroMatricula; 
+		return "\n-----------------------------------" + "\nNome aluno: "
+				+ this.nomeAluno + "\nNúmero matrícula :"
+				+ this.numeroMatricula;
 	}
 
 }
