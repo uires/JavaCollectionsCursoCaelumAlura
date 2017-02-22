@@ -33,12 +33,15 @@ public class Alunos {
 				+ this.nomeAluno + "\nNúmero matrícula :"
 				+ this.numeroMatricula;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
-		Alunos a = (Alunos)obj;		
+		Alunos a = (Alunos) obj;
 		return this.nomeAluno.equals(a.nomeAluno);
-		
-		
-	}
 
+	}
+	@Override
+	public int hashCode() {
+		return this.nomeAluno.hashCode(); 
+	}
 }
