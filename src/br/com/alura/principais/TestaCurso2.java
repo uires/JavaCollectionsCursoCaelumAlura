@@ -32,7 +32,8 @@ public class TestaCurso2 {
 		javaColecoes.adiciona(a1);
 		System.out.println(javaColecoes + "\n" + aulas);
 		System.out.println("---------------------------------------");
-		
+		//Collections.reverse(aulas);
+		//System.out.println(aulas);
 		
 		
 	}

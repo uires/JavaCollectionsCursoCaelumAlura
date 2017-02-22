@@ -1,5 +1,6 @@
 package br.com.alura;
 import java.util.*;
+import java.lang.*;
 public class Curso implements Comparable<Curso> {
 	private String nome;
 	private String nomeInstrutor;
@@ -25,7 +26,7 @@ public class Curso implements Comparable<Curso> {
 		
 	public String toString(){
 		return "Curso: " + this.nome + "\nCom o instrutor: " + this.nomeInstrutor +
-				"\nTempo total de aula: " + this.getTempoTotal() + " minutos" ;
+				"\nTempo total das aulas: " + this.getTempoTotal() + " minutos" ;
 		
 	}
 	public void adiciona(Aula aula){
@@ -39,8 +40,8 @@ public class Curso implements Comparable<Curso> {
 	}
 
 	@Override
-	public int compareTo(Curso arg0) {
-		return this.nome.compareTo(arg0.nome);
+	public int compareTo(Curso outraAula) {
+		return this.nome.compareTo(outraAula.nome);
 	}
 	
 	

@@ -2,7 +2,7 @@ package br.com.alura.principais;
 
 import java.util.List;
 import java.util.*;
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
+
 
 import br.com.alura.Aula;
 import br.com.alura.Curso;
