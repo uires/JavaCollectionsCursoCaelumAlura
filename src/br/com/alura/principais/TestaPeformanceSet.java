@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 
-public class TestaPeformaceSet {
+public class TestaPeformanceSet {
 	public static void main(String[] args) {
 
 		Collection<Integer> numeros = new HashSet<>();
