@@ -22,10 +22,9 @@ public class TestaCursoComAlunos {
 		javaColecoes.adiciona(new Aula("Java: Orientado a Objeto", 32,
 				"Guilherme Silveira", 8));
 
-		Alunos a1 = new Alunos("João Lima", 22487);
-		Alunos a2 = new Alunos("Laisa Karoline", 11322);
-		Alunos a3 = new Alunos("Maurício Aniche", 22443);
-
+		Alunos a1 = new Alunos("João Lima", 10000);
+		Alunos a2 = new Alunos("Laisa Karoline", 10001);
+		Alunos a3 = new Alunos("Maurício Aniche", 10002);
 		javaColecoes.matriculaAluno(a1);
 		javaColecoes.matriculaAluno(a2);
 		javaColecoes.matriculaAluno(a3);
@@ -38,7 +37,7 @@ public class TestaCursoComAlunos {
 		} catch (Exception e) {
 			System.out.println("----" + e);
 		}
-		Alunos a4 = new Alunos("Jesus Santos ", 42312);
+		Alunos a4 = new Alunos("Jesus Santos ", 10003);
 	
 		
 		
