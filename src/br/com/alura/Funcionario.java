@@ -1,6 +1,8 @@
 package br.com.alura;
 
-public class Funcionario implements Comparable<Funcionario>{
+import java.util.Comparator;
+
+public class Funcionario{
 	private String nome;
 	private int idade;
 

@@ -16,7 +16,7 @@ public class OrdenaNumero {
 		
 		
 		
-		Set<Funcionario> funcionarios  = new TreeSet<>();
+		Set<Funcionario> funcionarios  = new TreeSet<>(new OrdenaComparete());
 		
 	
 		

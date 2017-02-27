@@ -1,13 +1,16 @@
 package br.com.alura.principais;
 
-public class OrdenaComparete {
+import java.util.Comparator;
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+import br.com.alura.Funcionario;
 
-	}
+public class OrdenaComparete implements Comparator<Funcionario>{
+	  
+	@Override
+	    public int compare(Funcionario funcionario, Funcionario outroFuncionario) {
+	        return funcionario.getIdade() - outroFuncionario.getIdade();
+	    }
 
+	
+	
 }
