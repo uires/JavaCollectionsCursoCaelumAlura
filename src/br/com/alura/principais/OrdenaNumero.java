@@ -20,16 +20,21 @@ public class OrdenaNumero {
 		
 	
 		
-		funcionarios.add(f1);
 		funcionarios.add(f2);
+		funcionarios.add(f1);
 		funcionarios.add(f3);
 		
-		Iterator<Funcionario> iterator = funcionarios.iterator();
+		Iterator<Funcionario> iterador = funcionarios.iterator();
 		
-		while(iterator.hasNext()){
-			System.out.println(iterator.next().getNome());
+		while(iterador.hasNext()){
+			System.out.println(iterador.next().getNome());
 		}
 		
+			
+		//for (Funcionario funcionario : funcionarios) {
+			//System.out.println(funcionario);
+			
+		//}
 		
 		
 	}

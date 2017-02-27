@@ -39,6 +39,7 @@ public class TestaCursoComAlunos {
 		}
 		Alunos a4 = new Alunos("Jesus Santos ", 10003);
 	
+		System.out.println(javaColecoes.buscaMatricula(10002));
 		
 		
 		
