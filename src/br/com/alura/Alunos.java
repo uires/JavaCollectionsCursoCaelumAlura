@@ -10,7 +10,7 @@ public class Alunos {
 
 	public Alunos(String nomeAluno, Integer numeroMatricula) {
 		if (nomeAluno == null) {
-			throw new NullPointerException("Nome não pode ser null");
+			throw new NullPointerException("-");
 		}
 		this.nomeAluno = nomeAluno;
 		if (numeroMatricula < matriculaLimite) {
